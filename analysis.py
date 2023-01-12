@@ -49,9 +49,9 @@ if __name__ == '__main__':
 
     pd.set_option('display.max_columns', 8)
 
-    hospital = pd.read_csv('test/general.csv')
-    prenatal = pd.read_csv('test/prenatal.csv')
-    sports = pd.read_csv('test/sports.csv')
+    hospital = pd.read_csv('datasets/general.csv')
+    prenatal = pd.read_csv('datasets/prenatal.csv')
+    sports = pd.read_csv('datasets/sports.csv')
 
     patiens = create_patients_df(hospital, prenatal, sports)
     show_df_sample(patiens)
